@@ -47,4 +47,4 @@
 - `/gsd:execute-phase` — Ejecutar fase
 
 ## Contacto
-Sisteco — contacto@sisteco.cl · +56 9 40065566 · Santiago, Chile
+Sisteco — felipe.martinez@sisteco.cl · +56 9 40065566 · Santiago, Chile
