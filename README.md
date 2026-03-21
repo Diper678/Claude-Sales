@@ -1,4 +1,4 @@
-# {{PROJECT_NAME}} — Sisteco Project
+# — Sisteco Documentation Project
 
 > Generado desde `sisteco-project-template`. Framework de documentación jerárquica.
 
