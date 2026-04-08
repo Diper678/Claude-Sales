@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "discord-research": {
+      "command": "node",
+      "args": ["./shared/discord-channel/dist/discord.js"],
+      "env": {
+        "DISCORD_BOT_TOKEN": "${RESEARCH_BOT_TOKEN}",
+        "DISCORD_CHANNEL_ID": "${RESEARCH_CHANNEL_ID}",
+        "DISCORD_ALLOWED_USERS": "${DISCORD_OWNER_ID}",
+        "AGENT_NAME": "research"
+      }
+    }
+  }
+}

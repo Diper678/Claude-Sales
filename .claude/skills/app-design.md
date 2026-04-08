@@ -1,10 +1,10 @@
 ---
 name: app-design
 description: >
-  Sisteco App Design System — guia unificada de marca, UI/UX, y patrones de diseno
-  para la aplicacion B2B de ventas. Aplica identidad visual Sisteco, patron workspace-first
+  [EMPRESA] App Design System — guia unificada de marca, UI/UX, y patrones de diseno
+  para la aplicacion B2B de ventas. Aplica identidad visual [EMPRESA], patron workspace-first
   con lenguaje natural, y componentes del dashboard. Usar cuando se diseñe o implemente
-  cualquier pagina, componente, o interaccion de la aplicacion Sisteco.
+  cualquier pagina, componente, o interaccion de la aplicacion [EMPRESA].
 triggers:
   - diseñar pagina
   - crear componente
@@ -20,17 +20,17 @@ triggers:
   - layout
 ---
 
-# Sisteco App Design System
+# [EMPRESA] App Design System
 
 > Skill unificado que combina identidad de marca, sistema de diseño, patrones de UI/UX,
-> y guias de implementacion para la aplicacion B2B de ventas de Sisteco.
-> Inspirado en la metodologia de Brand Guidelines de Anthropic, adaptado a Sisteco.
+> y guias de implementacion para la aplicacion B2B de ventas de [EMPRESA].
+> Inspirado en la metodologia de Brand Guidelines de Anthropic, adaptado a [EMPRESA].
 
 ---
 
 ## 1. Identidad de Marca
 
-### Quien es Sisteco
+### Quien es [EMPRESA]
 - **Mision:** La empresa agentica de ventas B2B
 - **Posicionamiento:** Infraestructura inteligente para ventas B2B
 - **Tagline:** "Menos leads, mas cierres"
@@ -104,7 +104,7 @@ triggers:
 |-----------|-----------------|---------------------|--------------------|--------------------------|
 | Headings  | Sharp Grotesk   | system-ui, sans-serif | Medium, SemiBold, Bold | H1-H6, titulos de seccion |
 | Body      | Source Sans 3   | system-ui, sans-serif | 400, 600           | Parrafos, labels, UI      |
-| Logo      | Nasalization    | —                   | Regular            | SOLO wordmark "Sisteco"   |
+| Logo      | Nasalization    | —                   | Regular            | SOLO wordmark "[EMPRESA]"   |
 | Mono      | JetBrains Mono  | monospace           | 400                | Codigo, IDs, datos raw    |
 
 ### Escala Tipografica
@@ -122,7 +122,7 @@ triggers:
 
 ### Reglas de Tipografia
 - Sharp Grotesk SOLO para headings — nunca en body text
-- Nasalization SOLO para el wordmark "Sisteco" en sidebar/header
+- Nasalization SOLO para el wordmark "[EMPRESA]" en sidebar/header
 - Source Sans 3 es el workhorse — todo lo que no sea heading o logo
 - Line-height: 1.5 para body, 1.2 para headings
 - Letter-spacing: -0.02em en headings grandes (2xl+)
@@ -683,7 +683,7 @@ Inspiraciones directas:
 
 ### Favicon y Logo
 - `assets/sisteco-icon.png` — icono 32x32 para favicon + sidebar
-- Wordmark "Sisteco" renderizado con Nasalization en sidebar
+- Wordmark "[EMPRESA]" renderizado con Nasalization en sidebar
 
 ---
 
@@ -765,7 +765,7 @@ Al crear o modificar cualquier pagina de la app, verificar:
 --notion-border: #E5E5E3;      /* Borde sutil */
 ```
 
-**Patron clave:** Dos command palettes separados — `/` para crear/ejecutar (inline) y `Cmd+K` para navegar/buscar (modal). Sisteco debe implementar ambos.
+**Patron clave:** Dos command palettes separados — `/` para crear/ejecutar (inline) y `Cmd+K` para navegar/buscar (modal). [EMPRESA] debe implementar ambos.
 
 ### 14.3 Obsidian (v1.12) — CSS Variables + Minimal Design
 
@@ -800,13 +800,13 @@ Al crear o modificar cualquier pagina de la app, verificar:
 **Lo que tomamos:**
 - **Filosofia "Designed to be forgotten"** — la voz es una capa invisible, no un panel prominente
 - **Hold-to-speak pattern**: mantener tecla → hablar → soltar → texto procesado aparece
-  - Para Sisteco: `Alt+Space` o tecla configurable para dictar en el Workspace
+  - Para [EMPRESA]: `Alt+Space` o tecla configurable para dictar en el Workspace
 - **Post-proceso con LLM, no streaming crudo**:
   - El audio se envia al modelo, que limpia fillers, corrige gramatica, formatea
   - El texto aparece completo y limpio — NO caracter por caracter
   - Reduce distraccion visual y genera confianza en el resultado
 - **Minimal recording indicator**: solo un punto pulsante o micro-bar
-  - Para Sisteco: punto lime `#c5ed36` pulsante en el command bar = on-brand
+  - Para [EMPRESA]: punto lime `#c5ed36` pulsante en el command bar = on-brand
 - **Insercion directa en contexto**: texto aparece donde el usuario esta trabajando
   - No en un panel separado que requiera copy-paste
 - **Zero chrome cuando idle**: sin UI visible salvo icono en toolbar
@@ -822,14 +822,14 @@ Al crear o modificar cualquier pagina de la app, verificar:
 
 **Patron clave:** Voice input como capa invisible con post-procesamiento LLM. El usuario habla naturalmente, la IA limpia y formatea. Cero friction, cero distraccion.
 
-### 14.5 Sintesis: Patrones Unificados para Sisteco
+### 14.5 Sintesis: Patrones Unificados para [EMPRESA]
 
 #### Decisiones de Diseno Consolidadas
 
 | Decision | Valor | Fuente |
 |----------|-------|--------|
-| Fondo principal | `#F8F7F5` (warm white) | Claude + Sisteco original |
-| Texto principal | `#111111` | Sisteco (Claude usa `#141413`) |
+| Fondo principal | `#F8F7F5` (warm white) | Claude + [EMPRESA] original |
+| Texto principal | `#111111` | [EMPRESA] (Claude usa `#141413`) |
 | Warm grays | Si — nunca grises frios puros | Claude + Notion + Obsidian |
 | Border radius buttons | `10px` (~9.6px) | Claude |
 | Border radius cards | `12-16px` | Obsidian scale |
@@ -845,9 +845,9 @@ Al crear o modificar cualquier pagina de la app, verificar:
 | CSS architecture | Variables por capas (foundations → components → pages) | Obsidian |
 | Accent en HSL | `hsl(76, 82%, 57%)` = `#c5ed36` | Obsidian pattern |
 
-#### Tabla de Equivalencias App → Sisteco
+#### Tabla de Equivalencias App → [EMPRESA]
 
-| Componente Original | App | Equivalente Sisteco |
+| Componente Original | App | Equivalente [EMPRESA] |
 |---------------------|-----|---------------------|
 | Chat input bar | Claude | **Command bar** (bottom, con attach + agent selector + send) |
 | Artifacts panel | Claude | **Lead Detail Panel** (derecho, collapsible, con historial) |
@@ -872,7 +872,7 @@ Al crear o modificar cualquier pagina de la app, verificar:
 :root {
   /* === FOUNDATIONS: Colors === */
 
-  /* Background scale (warm, inspirado en Claude/Sisteco) */
+  /* Background scale (warm, inspirado en Claude/[EMPRESA]) */
   --bg-primary: #F8F7F5;
   --bg-surface: #FFFFFF;
   --bg-subtle: #F5F4F2;
@@ -982,7 +982,7 @@ Al crear o modificar cualquier pagina de la app, verificar:
 
 ## 16. Voice Input Pattern (Wispr Flow-Inspired)
 
-> El Workspace de Sisteco soporta input por voz como canal principal junto al texto.
+> El Workspace de [EMPRESA] soporta input por voz como canal principal junto al texto.
 
 ### Activacion
 ```
@@ -1059,6 +1059,6 @@ Al crear o modificar cualquier pagina de la app, verificar:
 
 ---
 
-*Skill unificado de diseno — Sisteco App Design System v1.2*
+*Skill unificado de diseno — [EMPRESA] App Design System v1.2*
 *Basado en Brand Guidelines de Anthropic + investigacion de Claude, Notion, Obsidian, y Wispr Flow.*
 *Reportes completos en `sisteco-knowledge/investigacion/`.*

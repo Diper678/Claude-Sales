@@ -10,7 +10,7 @@ triggerPatterns:
   - "skill.*creado"
 ---
 
-# Protocolo de Auto-Documentación Sisteco
+# Protocolo de Auto-Documentación [EMPRESA]
 
 > **OBLIGATORIO.** Ejecutar automáticamente al final de cada tarea significativa.
 > El usuario NO debe pedirlo — es responsabilidad de Claude hacerlo siempre.
@@ -70,7 +70,7 @@ Usar el MCP de Obsidian para mantener la base de conocimiento sincronizada:
    - `Tech/` → Arquitectura técnica
    - `agentes/` → Workflows de agentes/AI
    - `Logs/` → Diagnósticos y debugging
-   - `Sisteco/` → Decisiones estratégicas
+   - `[EMPRESA]/` → Decisiones estratégicas
 
 **Para decisiones estratégicas:**
 → Append a `estrategia/Resumen Estrategia 2026.md`

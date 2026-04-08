@@ -36,20 +36,20 @@ triggers:
 Package:     notebooklm-py v0.3.4 (pip, global Python 3.14)
 Auth:        ~/.notebooklm/storage_state.json (cookies Google, ~400 dias)
 CLI:         C:\Users\Dell 5520\AppData\Roaming\Python\Python314\Scripts\notebooklm.exe
-Bridge:      scripts/notebooklm-bridge.py (Obsidian Sisteco <-> NotebookLM)
+Bridge:      scripts/notebooklm-bridge.py (Obsidian [EMPRESA] <-> NotebookLM)
 Vault orig:  C:\Users\Dell 5520\Documents\Obsidian\Ing Civil Bioquimica (proyecto original)
-Vault Sisteco: C:\Users\Dell 5520\Documents\Obsidian de Sisteco\Sisteco\
+Vault [EMPRESA]: C:\Users\Dell 5520\Documents\Obsidian de [EMPRESA]\[EMPRESA]\
 ```
 
 ## 2. Arquitectura
 
 ```
-Obsidian Vault (Sisteco)          NotebookLM (Google)
-  procesos/                        Notebook: "Sisteco - Procesos"
-  integraciones/          sync     Notebook: "Sisteco - Integraciones"
-  Tech/                  ------>   Notebook: "Sisteco - Tech"
-  agentes/                         Notebook: "Sisteco - Agentes"
-  Sisteco/                         Notebook: "Sisteco - Estrategia"
+Obsidian Vault ([EMPRESA])          NotebookLM (Google)
+  procesos/                        Notebook: "[EMPRESA] - Procesos"
+  integraciones/          sync     Notebook: "[EMPRESA] - Integraciones"
+  Tech/                  ------>   Notebook: "[EMPRESA] - Tech"
+  agentes/                         Notebook: "[EMPRESA] - Agentes"
+  [EMPRESA]/                         Notebook: "[EMPRESA] - Estrategia"
 
                     |
                     v
@@ -90,13 +90,13 @@ notebooklm download audio ./podcast.mp3
 notebooklm chat "Resume los temas principales"
 ```
 
-### Bridge Sisteco (Python)
+### Bridge [EMPRESA] (Python)
 
 ```bash
 # Verificar auth
 python scripts/notebooklm-bridge.py check
 
-# Sync vault completo de Sisteco a NotebookLM
+# Sync vault completo de [EMPRESA] a NotebookLM
 python scripts/notebooklm-bridge.py sync
 
 # Sync solo una carpeta
@@ -104,7 +104,7 @@ python scripts/notebooklm-bridge.py sync --folder "procesos"
 python scripts/notebooklm-bridge.py sync --folder "Tech"
 
 # Generar materiales de estudio
-python scripts/notebooklm-bridge.py study --notebook "Sisteco - Procesos"
+python scripts/notebooklm-bridge.py study --notebook "[EMPRESA] - Procesos"
 
 # Preguntar a tus documentos
 python scripts/notebooklm-bridge.py ask "Como funciona el pipeline de leads?"
@@ -190,7 +190,7 @@ async with await NotebookLMClient.from_storage() as client:
 | Rate limit audio | Cuota diaria (variable) |
 | Rate limit video | Cuota horaria/diaria |
 
-## 7. Integracion con Flujos Sisteco
+## 7. Integracion con Flujos [EMPRESA]
 
 ### Flujo 1: Onboarding de cliente → Knowledge Base
 

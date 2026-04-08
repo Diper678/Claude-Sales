@@ -1,7 +1,7 @@
 ---
 name: sisteco-legal
 description: >
-  Compliance legal completo de Sisteco: contratos de servicio, DPA Ley 21.719,
+  Compliance legal completo de [EMPRESA]: contratos de servicio, DPA Ley 21.719,
   política de privacidad, términos y condiciones, RAT, bases legales B2B,
   checklist compliance por prioridad, sanciones. Reemplaza al abogado.
 triggers:
@@ -31,7 +31,7 @@ triggers:
   - EIPD
 ---
 
-# Sisteco Legal & Compliance — Referencia Completa
+# [EMPRESA] Legal & Compliance — Referencia Completa
 
 > Reemplaza al abogado/compliance externo. Cubre: Contratos, DPA, Ley 21.719, privacidad.
 > Chile. Derecho aplicable: Ley 19.628 (vigente) + Ley 21.719 (en implementación, vigor dic-2026).
@@ -42,7 +42,7 @@ triggers:
 
 ```
 Ley 21.719: Promulgada. Vigor: diciembre 2026.
-Estado Sisteco:
+Estado [EMPRESA]:
   ✅ Conocimiento de la ley (este skill)
   ❌ Inventario de datos → pendiente
   ❌ RAT (Registro Actividades de Tratamiento) → pendiente
@@ -65,14 +65,14 @@ Sanciones máximas Ley 21.719:
 
 ### P1 — Antes de septiembre 2026 (crítico)
 
-- [ ] **Inventario de datos:** mapear qué datos recopila Sisteco, de quién, para qué
+- [ ] **Inventario de datos:** mapear qué datos recopila [EMPRESA], de quién, para qué
 - [ ] **RAT (Registro de Actividades de Tratamiento):** completar plantilla (ver sección 8)
 - [ ] **Test de ponderación de interés legítimo:** para prospectos B2B (ver sección 5)
-- [ ] **Política de privacidad:** publicar en sisteco.cl (ver template sección 6)
+- [ ] **Política de privacidad:** publicar en [TU_DOMINIO] (ver template sección 6)
 - [ ] **DPA con clientes:** antes de onboarding de primer cliente (ver template sección 3)
 - [ ] **SCCs con proveedores cloud:** Convex (USA), Vercel (USA), Clerk (USA), Resend (USA)
 - [ ] **Sistema opt-out:** botón en emails + registro en Convex tabla `optOuts`
-- [ ] **Portal derechos del titular:** formulario en sisteco.cl/privacidad
+- [ ] **Portal derechos del titular:** formulario en [TU_DOMINIO]/privacidad
 
 ### P2 — Antes de noviembre 2026
 
@@ -85,19 +85,19 @@ Sanciones máximas Ley 21.719:
 
 ---
 
-## 3. Template: Contrato de Servicio Sisteco
+## 3. Template: Contrato de Servicio [EMPRESA]
 
 ```markdown
 CONTRATO DE PRESTACIÓN DE SERVICIOS DE SOFTWARE
-Sisteco — Plataforma de Automatización de Ventas B2B
+[EMPRESA] — Plataforma de Automatización de Ventas B2B
 
 Santiago de Chile, [FECHA]
 
 ENTRE:
-PRESTADOR: [SISTECO SpA / Felipe [Apellido], RUT XX.XXX.XXX-X]
+PRESTADOR: [SISTECO SpA / [NOMBRE REPRESENTANTE], RUT XX.XXX.XXX-X]
   Domicilio: Las Condes, Santiago de Chile
-  Email: contacto@sisteco.cl
-  Teléfono: +56 9 40065566
+  Email: [TU_EMAIL]
+  Teléfono: [TU_TELEFONO]
 
 CLIENTE: [RAZÓN SOCIAL EMPRESA]
   RUT: [XX.XXX.XXX-X]
@@ -110,7 +110,7 @@ SE ACUERDA LO SIGUIENTE:
 
 ## CLÁUSULA 1 — OBJETO DEL CONTRATO
 
-Sisteco se compromete a prestar al Cliente los servicios de automatización
+[EMPRESA] se compromete a prestar al Cliente los servicios de automatización
 de prospección y ventas B2B descritos en el Plan [INICIO / CRECIMIENTO /
 ENTERPRISE] elegido por el Cliente, según los términos de este contrato.
 
@@ -125,7 +125,7 @@ Los servicios incluyen:
 
 ## CLÁUSULA 2 — PRECIO Y FORMA DE PAGO
 
-El Cliente pagará a Sisteco la suma de USD $[PRECIO] más IVA (19%) mensual
+El Cliente pagará a [EMPRESA] la suma de USD $[PRECIO] más IVA (19%) mensual
 = USD $[PRECIO×1.19] o su equivalente en CLP según tipo de cambio del día
 de facturación.
 
@@ -145,17 +145,17 @@ por escrito su intención de no renovar con 30 días de anticipación.
 
 ## CLÁUSULA 4 — GARANTÍA 30 DÍAS
 
-Sisteco garantiza satisfacción completa durante los primeros 30 días.
+[EMPRESA] garantiza satisfacción completa durante los primeros 30 días.
 Si el Cliente no está satisfecho por cualquier razón, se reembolsará
 el 100% del pago del primer mes sin preguntas.
 
 ## CLÁUSULA 5 — DATOS PERSONALES (Ley 21.719)
 
 5.1 ROL DE LAS PARTES: Las partes acuerdan que:
-- Sisteco actúa como RESPONSABLE del tratamiento de datos de prospectos
+- [EMPRESA] actúa como RESPONSABLE del tratamiento de datos de prospectos
   captados mediante sus herramientas de prospección (PhantomBuster, SII, etc.)
 - Cuando el Cliente provee sus propios datos de contactos, el Cliente actúa
-  como Responsable y Sisteco como Encargado (Data Processor)
+  como Responsable y [EMPRESA] como Encargado (Data Processor)
 
 5.2 BASE LEGAL: El tratamiento de datos de prospectos B2B se basa en:
 (a) Interés legítimo (Art. 13 Ley 21.719): captación de leads de empresas
@@ -172,7 +172,7 @@ el 100% del pago del primer mes sin preguntas.
 
 5.4 OBLIGACIONES DEL CLIENTE:
 - No compartir credenciales de acceso
-- Notificar a Sisteco si recibe solicitudes de derechos de titulares
+- Notificar a [EMPRESA] si recibe solicitudes de derechos de titulares
 
 ## CLÁUSULA 6 — CONFIDENCIALIDAD
 
@@ -182,14 +182,14 @@ por 2 años posteriores. Queda excluida la información que sea de dominio públ
 
 ## CLÁUSULA 7 — LÍMITE DE RESPONSABILIDAD
 
-La responsabilidad total de Sisteco bajo este contrato no excederá el
+La responsabilidad total de [EMPRESA] bajo este contrato no excederá el
 equivalente a 3 meses de suscripción pagada por el Cliente.
-Sisteco no será responsable por lucro cesante, pérdida de oportunidad
+[EMPRESA] no será responsable por lucro cesante, pérdida de oportunidad
 de negocio o daños indirectos.
 
 ## CLÁUSULA 8 — PROPIEDAD INTELECTUAL
 
-Sisteco retiene todos los derechos de propiedad intelectual sobre la
+[EMPRESA] retiene todos los derechos de propiedad intelectual sobre la
 plataforma, algoritmos y código. El Cliente recibe una licencia de uso
 no exclusiva durante la vigencia del contrato.
 
@@ -200,7 +200,7 @@ del Cliente y serán entregados en formato exportable al término del contrato.
 
 Causales de término anticipado:
 - Falta de pago por más de 15 días corridos
-- Violación de los términos de uso (uso no autorizado, scraping de datos de Sisteco)
+- Violación de los términos de uso (uso no autorizado, scraping de datos de [EMPRESA])
 - Solicitud escrita con 30 días de aviso
 
 ## CLÁUSULA 10 — LEY APLICABLE Y JURISDICCIÓN
@@ -213,7 +213,7 @@ reglas del Centro de Arbitraje y Mediación de Santiago (CAM Santiago).
 
 FIRMA PRESTADOR:                    FIRMA CLIENTE:
 _______________________             _______________________
-[Nombre Sisteco]                    [Nombre Representante Legal]
+[Nombre [EMPRESA]]                    [Nombre Representante Legal]
 RUT: XX.XXX.XXX-X                   RUT: XX.XXX.XXX-X
 Fecha:                              Fecha:
 ```
@@ -226,14 +226,14 @@ Fecha:                              Fecha:
 ACUERDO DE TRATAMIENTO DE DATOS PERSONALES (DPA)
 Conforme a Ley 21.719 sobre Protección de Datos Personales (Chile)
 
-Entre Sisteco (Encargado) y [EMPRESA CLIENTE] (Responsable)
+Entre [EMPRESA] (Encargado) y [EMPRESA CLIENTE] (Responsable)
 Fecha: [FECHA]
 
 ## 1. OBJETO
 
 Este DPA regula el tratamiento de datos personales que el Responsable
 encomienda al Encargado en el contexto de los servicios de la plataforma
-Sisteco (pipeline de leads, dashboard, scoring).
+[EMPRESA] (pipeline de leads, dashboard, scoring).
 
 ## 2. DATOS TRATADOS
 
@@ -250,7 +250,7 @@ Sisteco (pipeline de leads, dashboard, scoring).
 
 ## 3. INSTRUCCIONES DE TRATAMIENTO
 
-El Encargado (Sisteco) tratará los datos únicamente:
+El Encargado ([EMPRESA]) tratará los datos únicamente:
 (a) Para la prestación del servicio contratado
 (b) Conforme a las instrucciones documentadas del Responsable
 (c) Nunca para propósitos propios del Encargado
@@ -286,7 +286,7 @@ El Encargado asistirá al Responsable para responder solicitudes de:
 - **Portabilidad:** exportar en formato JSON/CSV
 - **Oposición:** opt-out de cualquier tratamiento
 
-Canal de solicitudes: contacto@sisteco.cl (respuesta máx. 15 días hábiles)
+Canal de solicitudes: [TU_EMAIL] (respuesta máx. 15 días hábiles)
 
 ## 7. NOTIFICACIÓN DE INCIDENTES
 
@@ -317,7 +317,7 @@ FIRMA: ___________________    FECHA: ___________________
 
 ## 5. Bases Legales para Prospección B2B (Interés Legítimo)
 
-### ¿Qué puede hacer Sisteco legalmente?
+### ¿Qué puede hacer [EMPRESA] legalmente?
 
 **SÍ puede:**
 - Recopilar datos de contacto de LinkedIn de directivos de empresas (datos de carácter profesional)
@@ -337,13 +337,13 @@ FIRMA: ___________________    FECHA: ___________________
 Para documentar la base legal de prospección B2B:
 
 ```markdown
-REGISTRO DE INTERÉS LEGÍTIMO — Prospección B2B Sisteco
+REGISTRO DE INTERÉS LEGÍTIMO — Prospección B2B [EMPRESA]
 
 Fecha de evaluación: [FECHA]
 Actividad de tratamiento: Prospección de leads B2B para oferta de servicios SaaS
 
 PASO 1 — IDENTIFICACIÓN DEL INTERÉS LEGÍTIMO:
-Interés: comercial legítimo de Sisteco en ofrecer servicios de automatización
+Interés: comercial legítimo de [EMPRESA] en ofrecer servicios de automatización
 de ventas a empresas medianas chilenas que podrían beneficiarse.
 ¿Es el interés real y presente? SÍ — MRR objetivo, operación activa.
 
@@ -362,22 +362,22 @@ PASO 3 — PONDERACIÓN (¿prevalece interés del titular?):
   razonablemente esperar recibir propuestas comerciales B2B relevantes
 - Salvaguarda: opt-out sencillo en primer contacto y en todos los emails
 
-CONCLUSIÓN: El interés legítimo de Sisteco prevalece sobre los derechos
+CONCLUSIÓN: El interés legítimo de [EMPRESA] prevalece sobre los derechos
 del titular para esta actividad de tratamiento específica.
 
-Firmado: Felipe [Apellido], Responsable del Tratamiento — [FECHA]
+Firmado: [NOMBRE REPRESENTANTE], Responsable del Tratamiento — [FECHA]
 ```
 
 ---
 
-## 6. Template: Política de Privacidad sisteco.cl
+## 6. Template: Política de Privacidad [TU_DOMINIO]
 
 ```markdown
 # Política de Privacidad
 
 **Última actualización:** [FECHA]
-**Responsable del tratamiento:** Sisteco SpA, RUT XX.XXX.XXX-X
-**Contacto DPO/privacidad:** contacto@sisteco.cl
+**Responsable del tratamiento:** [EMPRESA] SpA, RUT XX.XXX.XXX-X
+**Contacto DPO/privacidad:** [TU_EMAIL]
 **Dirección:** Las Condes, Santiago de Chile
 
 ## ¿Qué datos recopilamos?
@@ -430,7 +430,7 @@ Usted tiene derecho a:
 - **Oponerse** al tratamiento basado en interés legítimo
 - **Revocar consentimiento** cuando sea la base legal
 
-**Ejercer sus derechos:** Enviar email a contacto@sisteco.cl con asunto
+**Ejercer sus derechos:** Enviar email a [TU_EMAIL] con asunto
 "Derechos Ley 21.719 — [su nombre]". Respuesta en máximo 15 días hábiles.
 
 **Reclamaciones:** Puede presentar reclamación ante la Agencia de Protección
@@ -440,8 +440,8 @@ de Datos Personales (APDP) cuando esté operativa.
 
 Para ser eliminado de nuestro sistema de prospección:
 1. Responda cualquier email con "BAJA" o "STOP"
-2. Envíe email a contacto@sisteco.cl con asunto "Opt-out"
-3. [Próximamente] Use el formulario en sisteco.cl/privacidad
+2. Envíe email a [TU_EMAIL] con asunto "Opt-out"
+3. [Próximamente] Use el formulario en [TU_DOMINIO]/privacidad
 ```
 
 ---
@@ -451,17 +451,17 @@ Para ser eliminado de nuestro sistema de prospección:
 ```markdown
 # Términos y Condiciones de Uso
 
-**Sisteco** — Plataforma de Automatización de Ventas B2B
+**[EMPRESA]** — Plataforma de Automatización de Ventas B2B
 Última actualización: [FECHA]
 
 ## 1. Aceptación
 
-Al contratar los servicios de Sisteco o acceder a la plataforma,
+Al contratar los servicios de [EMPRESA] o acceder a la plataforma,
 el Cliente acepta íntegramente estos Términos y Condiciones.
 
 ## 2. Descripción del Servicio
 
-Sisteco es una plataforma SaaS de automatización de prospección y ventas
+[EMPRESA] es una plataforma SaaS de automatización de prospección y ventas
 B2B para empresas medianas chilenas. Incluye: pipeline de leads, dashboard
 CEO, scoring IA, alertas en tiempo real.
 
@@ -470,7 +470,7 @@ CEO, scoring IA, alertas en tiempo real.
 El Cliente se compromete a:
 - Usar la plataforma solo para prospección B2B legítima
 - No violar la Ley 21.719 en el uso de datos de prospectos
-- No intentar acceder a datos de otros clientes de Sisteco
+- No intentar acceder a datos de otros clientes de [EMPRESA]
 - No hacer ingeniería inversa de los algoritmos de scoring
 
 ## 4. Disponibilidad del Servicio
@@ -486,7 +486,7 @@ El uso de los datos se rige por nuestra Política de Privacidad y DPA.
 
 ## 6. Propiedad Intelectual
 
-Sisteco retiene todos los derechos sobre la plataforma. Los leads y datos
+[EMPRESA] retiene todos los derechos sobre la plataforma. Los leads y datos
 generados para la cuenta del Cliente son propiedad del Cliente.
 
 ## 7. Limitación de Responsabilidad
@@ -495,7 +495,7 @@ Ver Cláusula 7 del Contrato de Servicio.
 
 ## 8. Modificaciones
 
-Sisteco puede modificar estos términos con 30 días de aviso por email.
+[EMPRESA] puede modificar estos términos con 30 días de aviso por email.
 El uso continuado del servicio implica aceptación de los nuevos términos.
 
 ## 9. Ley Aplicable
@@ -517,7 +517,7 @@ Conforme Art. 16 Ley 21.719 | Actualizado: [FECHA]
 
 | Campo | Detalle |
 |-------|---------|
-| Responsable | Sisteco SpA (Felipe [Apellido], contacto@sisteco.cl) |
+| Responsable | [EMPRESA] SpA ([NOMBRE REPRESENTANTE], [TU_EMAIL]) |
 | Propósito | Identificar y calificar prospectos B2B para oferta comercial |
 | Categorías de titulares | Directivos y decisores de empresas con 50+ empleados |
 | Categorías de datos | Nombre, cargo, empresa, email profesional, LinkedIn URL, RUT empresa |
@@ -545,7 +545,7 @@ Conforme Art. 16 Ley 21.719 | Actualizado: [FECHA]
 
 | Campo | Detalle |
 |-------|---------|
-| Propósito | Calificar automáticamente leads según fit con ICP de Sisteco |
+| Propósito | Calificar automáticamente leads según fit con ICP de [EMPRESA] |
 | Sistema IA | Gemini 2.5 Flash Lite (Google LLC) |
 | Datos usados | Nombre, cargo, empresa, industria, tamaño empresa, datos SII |
 | Decisión automatizada | SÍ — genera categoría HOT/WARM/NURTURE/SKIP |
@@ -563,7 +563,7 @@ Conforme Art. 16 Ley 21.719 | Actualizado: [FECHA]
 | Propósito | Contactar a prospectos calificados con propuesta de valor |
 | Canal | Email (Resend) + LinkedIn (manual) |
 | Base legal | Interés legítimo (B2B) |
-| Opt-out | Sí — en cada email + contacto@sisteco.cl |
+| Opt-out | Sí — en cada email + [TU_EMAIL] |
 | Registro opt-outs | Convex tabla `optOuts` |
 ```
 
@@ -575,11 +575,11 @@ Conforme Art. 16 Ley 21.719 | Actualizado: [FECHA]
 # EVALUACIÓN DE IMPACTO EN LA PROTECCIÓN DE DATOS (EIPD)
 Sistema de Scoring IA — Gemini 2.5 Flash Lite
 
-Fecha: [FECHA] | Responsable: Felipe [Apellido]
+Fecha: [FECHA] | Responsable: [NOMBRE REPRESENTANTE]
 
 ## 1. Descripción del Sistema
 
-Sisteco usa Gemini (Google) para evaluar automáticamente el nivel de
+[EMPRESA] usa Gemini (Google) para evaluar automáticamente el nivel de
 ajuste de prospectos B2B con nuestro Perfil de Cliente Ideal (ICP).
 Output: score 0-100 + categoría HOT/WARM/NURTURE/SKIP.
 
@@ -611,7 +611,7 @@ significativos (decisión de contactar o no), (b) perfilado sistemático.
 Riesgo residual: BAJO. El sistema es proporcional al propósito,
 usa datos mínimos necesarios e incluye supervisión humana en decisiones relevantes.
 
-Aprobado: Felipe [Apellido] — [FECHA]
+Aprobado: [NOMBRE REPRESENTANTE] — [FECHA]
 Próxima revisión: [FECHA + 1 año]
 ```
 
@@ -622,7 +622,7 @@ Próxima revisión: [FECHA + 1 año]
 Para cada proveedor cloud que transfiere datos fuera de Chile:
 
 ```markdown
-REGISTRO SCCs — Sisteco
+REGISTRO SCCs — [EMPRESA]
 Fecha: [FECHA]
 
 | Proveedor | País | DPA URL | SCCs | Estado |
@@ -670,12 +670,12 @@ Santiago de Chile, [FECHA]
 
 ENTRE:
 
-PARTE A: Sisteco SpA
+PARTE A: [EMPRESA] SpA
   RUT: XX.XXX.XXX-X
-  Representante Legal: Felipe Palma
+  Representante Legal: [NOMBRE REPRESENTANTE]
   Domicilio: Las Condes, Santiago de Chile
-  Email: contacto@sisteco.cl
-  Teléfono: +56 9 40065566
+  Email: [TU_EMAIL]
+  Teléfono: [TU_TELEFONO]
 
 PARTE B: [RAZÓN SOCIAL EMPRESA]
   RUT: [XX.XXX.XXX-X]
@@ -690,7 +690,7 @@ En adelante, individualmente "Parte" y en conjunto "las Partes".
 
 Las Partes han decidido explorar una posible relación comercial y/o
 técnica relativa a [DESCRIBIR PROPÓSITO: ej. "la evaluación de los
-servicios de automatización de ventas B2B de Sisteco para la operación
+servicios de automatización de ventas B2B de [EMPRESA] para la operación
 comercial de [EMPRESA]"]. Para dicho fin, será necesario que ambas
 Partes compartan información de carácter confidencial.
 
@@ -933,8 +933,8 @@ ejemplares de igual tenor y fecha.
 PARTE A — SISTECO                  PARTE B — [EMPRESA]
 
 _______________________             _______________________
-Felipe Palma                        [NOMBRE REPRESENTANTE LEGAL]
-Sisteco SpA                         [RAZÓN SOCIAL]
+[NOMBRE REPRESENTANTE]                        [NOMBRE REPRESENTANTE LEGAL]
+[EMPRESA] SpA                         [RAZÓN SOCIAL]
 RUT: XX.XXX.XXX-X                   RUT: XX.XXX.XXX-X
 
 Fecha: _____________                Fecha: _____________
@@ -952,7 +952,7 @@ ANTES de enviar NDA a prospecto/partner/proveedor:
 4. [ ] Revisar que las exclusiones apliquen al caso concreto
 5. [ ] Enviar como PDF (no editable) — generar con: navegador → Print → Save as PDF
 6. [ ] Registrar en Convex: tabla `documents`, tipo: "NDA", estado: "enviado"
-7. [ ] Guardar copia firmada en Google Drive → Sisteco/Legal/NDAs/[empresa]-[fecha].pdf
+7. [ ] Guardar copia firmada en Google Drive → [EMPRESA]/Legal/NDAs/[empresa]-[fecha].pdf
 
 CUÁNDO usar NDA:
 - SIEMPRE antes de compartir: architecture docs, scoring algorithms, pricing internals

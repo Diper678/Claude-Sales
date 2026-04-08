@@ -1,50 +1,45 @@
-# — Sisteco Sales Documentation Project
+# Claude-Sales — Documentation Framework Template
 
-> Generado desde `sisteco-project-template`. Framework de documentación jerárquica.
+> Motor de generación y automatización de contenido para [EMPRESA].
+
+## Capacidades
+
+- **Carruseles Canva** — Creados y agendados diariamente via Canva API
+- **Videos Remotion** — Edición programática de video con React
+- **Research automatizado** — Reddit, YouTube, Claude Code, Google Labs, competencia
+- **Calendario editorial** — Planificación basada en estudio de mercado
+- **Publicación calendarizada** — Workflows n8n coordinados multi-plataforma
+- **Respuestas multicanal** — RRSS + email con AutoResearch activado
+- **CLI + Skills inteligentes** — Gestión desde Claude Code
 
 ## Quick Start
 
-1. Crear repo desde este template: "Use this template" en GitHub
-2. Clonar el nuevo repo
-3. Ejecutar: `node scripts/init-project.js`
-4. El script personaliza CLAUDE.md, AGENTS.md y configura el proyecto
+```bash
+npm install
+node scripts/content-cli.js status
+```
 
-## Estructura de Documentación (3-Tier Progressive Disclosure)
+## CLI
 
-### Tier 1 — Siempre Cargado (auto-load al inicio de sesión)
-- `CLAUDE.md` — Índice + reglas críticas (<100 líneas)
-- `AGENTS.md` — Cross-tool universal (Codex, Cursor, Copilot)
-- `.claude/rules/` — Reglas path-specific
+```bash
+node scripts/content-cli.js research scan     # Absorbe data de fuentes
+node scripts/content-cli.js plan generate     # Genera calendario editorial
+node scripts/content-cli.js create carousel   # Crea carrusel Canva
+node scripts/content-cli.js create video      # Renderiza video Remotion
+node scripts/content-cli.js distribute publish # Publica contenido agendado
+```
 
-### Tier 2 — Bajo Demanda
-- `.claude/skills/` — Skills invocados por trigger o request
-- `.claude/agents/` — Subagentes especializados
-- `.claude/commands/` — Comandos CLI custom
+## Estructura
 
-### Tier 3 — Referencia Profunda
-- `docs/` — Documentación operativa volátil
-- `sisteco-knowledge/` — Conocimiento estable de empresa
-
-## Skills Incluidos
-
-### Operativos Sisteco
-- `sisteco-finance.md` — Contabilidad, facturación, SII
-- `sisteco-legal.md` — Compliance, Ley 21.719, contratos
-- `sisteco-ops.md` — Operaciones, procesos, SOPs
-- `sisteco-propuesta.md` — Propuestas comerciales
-
-### Framework
-- `auto-doc.md` — Protocolo auto-documentación + Obsidian sync
-- `doc-framework.md` — Gestión y validación de estructura de docs
-
-### Herramientas
-- `posthog.md`, `n8n/`, `security/`, `scalability/`, `playwright-cli/`, etc.
-
-## Comandos GSD
-- `/gsd:new-project` — Iniciar proyecto
-- `/gsd:progress` — Ver estado
-- `/gsd:plan-phase` — Planificar fase
-- `/gsd:execute-phase` — Ejecutar fase
+```
+.claude/skills/     — Skills de contenido
+.claude/rules/      — Reglas del proyecto
+scripts/            — CLI y utilidades
+src/remotion/       — Composiciones de video
+content-templates/  — Templates de contenido
+calendar/           — Calendario editorial
+docs/               — Documentación operativa
+```
 
 ## Contacto
-Sisteco — felipe.martinez@sisteco.cl · +56 9 40065566 · Santiago, Chile
+[TU_EMPRESA] — [TU_EMAIL] · [TU_CIUDAD]

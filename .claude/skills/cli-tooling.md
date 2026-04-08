@@ -1,7 +1,7 @@
 ---
 name: cli-tooling
 description: >
-  Skill maestra de herramientas CLI en Sisteco. Cubre las 3 capas:
+  Skill maestra de herramientas CLI en [EMPRESA]. Cubre las 3 capas:
   (1) sisteco-cli.js — control de n8n, leads, PhantomBuster desde terminal;
   (2) Bruno CLI (bru) — testing de APIs HTTP con colecciones .bru;
   (3) CLI-Anything — harnesses Python+Click para software sin API HTTP.
@@ -22,10 +22,10 @@ triggers:
   - cli-anything
 ---
 
-# CLI Tooling de Sisteco — Guía Maestra
+# CLI Tooling de [EMPRESA] — Guía Maestra
 
 > **Tres herramientas, una sola fuente de verdad.**
-> Este documento es LA referencia para controlar Sisteco desde la terminal.
+> Este documento es LA referencia para controlar [EMPRESA] desde la terminal.
 
 ---
 
@@ -46,7 +46,7 @@ triggers:
 
 | Criterio | `sisteco` CLI | Bruno `bru` | CLI-Anything |
 |----------|--------------|-------------|--------------|
-| **APIs REST de Sisteco** | ✅ vía webhooks | ✅ colecciones .bru | No aplica |
+| **APIs REST de [EMPRESA]** | ✅ vía webhooks | ✅ colecciones .bru | No aplica |
 | **n8n workflows** | ✅ nativo | Solo verificar endpoints | No aplica |
 | **Output JSON para agentes** | ✅ `--json` | Parcial | ✅ nativo |
 | **Tests con assertions** | No (usar Bruno) | ✅ Chai assertions | ✅ pytest |
@@ -151,9 +151,9 @@ node scripts/sisteco-cli.js api test all           # Todas las colecciones
 | `score` | SAAN Leads Score AI (Gemini) | w362fELZQEKJZ885 |
 | `outreach` | SAAN Leads SDR Outreach Generator | 0GupYny80oeyAD34 |
 | `hot-lead` | B2B Prospecting - Secuencia 5 Emails | AIi6a0ICfXCQnhaY |
-| `lead-scoring` | Sisteco — Lead Scoring Pipeline | dLrpslRLhoIjMh6Y |
+| `lead-scoring` | [EMPRESA] — Lead Scoring Pipeline | dLrpslRLhoIjMh6Y |
 | `orchestrator` | SAAN — Orchestrator | 7HN6rtIuoktEYh0w |
-| `intel` | Sisteco — Inteligencia Competitiva FireCrawl | PXKP9mIPphfY80RI |
+| `intel` | [EMPRESA] — Inteligencia Competitiva FireCrawl | PXKP9mIPphfY80RI |
 
 ### PREREQUISITO: Activar workflows para trigger via webhook
 
@@ -216,7 +216,7 @@ bru run --env production --reporter-html /tmp/report.html
    → Usar gemini-2.5-flash-lite en colecciones Bruno
 ⚠️ Comentarios // entre secciones .bru = parse error en Bruno v2
    → Usar bloque docs { ... } para documentar requests
-⚠️ source .env falla si el .env tiene valores con espacios (FROM_EMAIL=Sisteco <hola@>)
+⚠️ source .env falla si el .env tiene valores con espacios (FROM_EMAIL=[EMPRESA] <hola@>)
    → Usar grep "^KEY=" .env | head -1 | cut -d= -f2-
 ```
 
@@ -288,7 +288,7 @@ tests {
 /cli-anything:validate <software>
 ```
 
-### Caso de uso Sisteco — LibreOffice para propuestas PDF
+### Caso de uso [EMPRESA] — LibreOffice para propuestas PDF
 
 Si necesitáramos generar PDFs de propuestas automáticamente:
 ```bash
@@ -298,7 +298,7 @@ Si necesitáramos generar PDFs de propuestas automáticamente:
 #   libreoffice-cli document batch --input-dir templates/ --output-dir output/
 ```
 
-### Stack en Sisteco: ¿cuándo aplica CLI-Anything?
+### Stack en [EMPRESA]: ¿cuándo aplica CLI-Anything?
 
 **Actualmente: NO** — todas las integraciones son APIs HTTP (n8n, Convex, Gemini, PB, Firecrawl).
 **Futuro:** Si integramos LibreOffice (propuestas), GIMP (assets visuales), o cualquier

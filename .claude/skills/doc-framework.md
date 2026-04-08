@@ -10,9 +10,9 @@ triggerPatterns:
   - "donde.*va.*este"
 ---
 
-# Doc Framework Manager — Sisteco
+# Doc Framework Manager — [EMPRESA]
 
-Gestiona el framework de documentación jerárquica de 3 tiers de Sisteco.
+Gestiona el framework de documentación jerárquica de 3 tiers de [EMPRESA].
 
 ## Arquitectura de 3 Tiers (Progressive Disclosure)
 

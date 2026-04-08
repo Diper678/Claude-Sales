@@ -8,3 +8,9 @@ node_modules/
 *.log
 .DS_Store
 Thumbs.db
+dist/
+out/
+*.mp4
+*.mov
+*.avi
+*.webm

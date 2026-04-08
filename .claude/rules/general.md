@@ -1,4 +1,4 @@
-# Reglas Generales — Sisteco
+# Reglas Generales — [EMPRESA] Content Engine
 
 ## Idioma y Comunicación
 - Respuestas SIEMPRE en español (es-CL)
@@ -7,22 +7,23 @@
 
 ## Git y Workflow
 - Sistema de planificación: GSD (Get Shit Done)
-- Deploy: `npx vercel --prod` (sin git remote en proyectos de landing)
+- Deploy: `npx vercel --prod`
 - Commits descriptivos en español
 
 ## Preferencias de Trabajo
-- Herramienta de diseño visual: Gemini 3 en Antigravity IDE
-- Claude Code: lógica, APIs, CSS, HTML, arquitectura de sistemas
-- Revenue first — cada acción debe acercar a un cliente pagando
+- Claude Code: lógica, APIs, contenido, arquitectura de sistemas
+- Content first — cada pieza de contenido genera audiencia o leads
 - AUTONOMÍA TOTAL — no pedir permiso en tareas rutinarias, ejecutar
 - NO construir agentes custom desde cero — usar plataformas existentes (n8n, Convex)
+- AutoResearch ACTIVADO para creación de contenido
 
-## Stack (resumen rápido)
-- Frontend: HTML/CSS/JS vanilla + GSAP 3.12.7 + Lucide 0.468.0
-- Backend: Vercel Serverless Functions
+## Stack Content Engine
+- Runtime: Node.js (NO Python)
+- Video: Remotion (React para video programático)
+- Diseño: Canva API (carruseles)
 - DB: Convex (NO Supabase, NO Firebase)
-- Auth: Clerk (Email + Google OAuth)
-- Email: Resend
-- Pagos: dLocal Go (API) / Reveniu
 - Workflows: n8n self-hosted (Railway)
-- AI: Gemini 2.5 Flash Lite (scoring) · Claude Sonnet (dev)
+- AI: Claude Sonnet (contenido) · Gemini 2.5 Flash Lite (research)
+- Sources: Reddit API, YouTube Data API, Firecrawl, RSS
+- Social: LinkedIn, Instagram, Twitter/X, TikTok, YouTube
+- Email: Resend

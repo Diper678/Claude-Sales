@@ -2,33 +2,30 @@
 paths:
   - "workflows/**"
   - "scripts/**"
-  - "docs/plans/**"
+  - "n8n-workflows/**"
 ---
 
-# Reglas de Workflows — Sisteco
+# Reglas de Workflows — Content Engine
 
-## n8n (Producto Central)
-- Sisteco = automatización como servicio. Workflows son el PRODUCTO.
-- Dashboard es SECUNDARIO — foco en workflows vendibles
+## n8n (Motor de Distribución)
+- Workflows coordinan TODA la publicación calendarizada
+- Cada plataforma tiene su workflow dedicado
+- Cron triggers para publicación automática
+
+## Workflows del Content Engine
+1. **WF-Research** — Absorción diaria de data (Reddit, YouTube, RSS)
+2. **WF-Carousel** — Generación y agendamiento de carruseles Canva
+3. **WF-Video** — Render y publicación de videos Remotion
+4. **WF-Publish** — Distribución multi-plataforma coordinada
+5. **WF-Community** — Monitoreo y respuesta de menciones/comentarios
+6. **WF-Newsletter** — Email semanal via Resend
 
 ## Convex-n8n Integration
 - HTTP actions SIEMPRE usan `.convex.site`
 - NUNCA usar `/api/*` para HTTP actions desde n8n
 
-## Lead Scoring Pipeline
-- Score AI con Gemini 2.5 Flash Lite — FUNCIONAL
-
-## Catálogo de Templates
-- Ver `docs/WORKFLOW-TEMPLATES.md` (T1-T11 por plan)
-- Base ($397): LinkedIn + ICP Score + SII
-- Crecimiento ($797): + Sales Navigator + CRM directo
-- Enterprise ($1,800): + omnicanal + data enrichment avanzado
-
-## PhantomBuster
-- LinkedIn Search ($69/mo)
-- Variable: `PB_LINKEDIN_AGENT_ID`
-
 ## Reglas de Automatización
-- SII enrichment en TODOS los planes
-- Cliente nunca toca herramientas — solo recibe resultados
-- Entregables: Sheet scored + CRM sync + alertas
+- Carruseles: generación diaria, publicación a hora óptima
+- Videos: render batch semanal, publicación calendarizada
+- Research: scan cada 6 horas de fuentes configuradas
+- Respuestas: monitoreo continuo, respuesta < 1 hora

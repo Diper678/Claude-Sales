@@ -5,10 +5,11 @@ paths:
   - "api/**"
 ---
 
-# Reglas Backend — Sisteco
+# Reglas Backend
 
 ## Convex (DB principal)
 - Base de datos reactiva en la nube — NO Supabase, NO Firebase
+- HTTP gateway: `[TU_CONVEX_URL].convex.site`
 - Regla n8n-Convex: HTTP actions usan `.convex.site`, NUNCA `/api/*`
 - Schema definido en `convex/schema.ts`
 - Functions: queries (read), mutations (write), actions (side effects)
@@ -20,11 +21,12 @@ paths:
 
 ## Scripts
 - SIEMPRE Node.js (NO Python)
+- CLI unificado: `scripts/project-cli.js`
 - Extensión `.cjs` para CommonJS cuando necesario
 
 ## APIs y Servicios
 - n8n instance: Railway self-hosted
-- PhantomBuster: LinkedIn Search ($69/mo)
+- PhantomBuster: LinkedIn Search
 - Firecrawl: web scraping
 - Resend: email transaccional
 - Gemini 2.5 Flash Lite: lead scoring

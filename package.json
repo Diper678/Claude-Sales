@@ -1,10 +1,28 @@
 {
-  "name": "{{PROJECT_NAME_SLUG}}",
+  "name": "sisteco-content-engine",
   "version": "1.0.0",
   "private": true,
-  "description": "Sisteco project — {{PROJECT_NAME}}",
+  "description": "[EMPRESA] Content Engine — Generación y automatización de contenido",
   "scripts": {
-    "start": "npx serve . -l 3000",
-    "init": "node scripts/init-project.js"
+    "start": "npx serve . -l 3001",
+    "cli": "node scripts/content-cli.js",
+    "research": "node scripts/content-cli.js research scan",
+    "plan": "node scripts/content-cli.js plan generate",
+    "carousel": "node scripts/content-cli.js create carousel",
+    "video": "node scripts/content-cli.js create video",
+    "publish": "node scripts/content-cli.js distribute publish",
+    "status": "node scripts/content-cli.js status",
+    "remotion:preview": "npx remotion preview src/remotion/index.ts",
+    "remotion:render": "npx remotion render src/remotion/index.ts"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.0",
+    "@remotion/renderer": "^4.0.0",
+    "remotion": "^4.0.0",
+    "dotenv": "^16.4.0",
+    "snoowrap": "^1.23.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
   }
 }

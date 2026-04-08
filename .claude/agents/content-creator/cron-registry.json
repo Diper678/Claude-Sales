@@ -1,0 +1,9 @@
+{
+  "crons": [
+    {
+      "name": "daily-carousel",
+      "schedule": "0 10 * * 1-5",
+      "prompt": "Tomar el research de hoy (leer docs/research/ más reciente y #content-research en Discord). Seleccionar la noticia más relevante según pilares de contenido. Generar carrusel para Instagram + TikTok + LinkedIn usando GIMP CLI (python3 -m cli.gimp_cli desde [RUTA_GIMP_CLI]): 1) Proponer título y 5-8 slides con texto. 2) Crear cada slide: project new --profile instagram_post → layer fondo #F8F7F5 → draw text con Sharp Grotesk → export PNG. 3) Usar voz de marca (directo, técnico, sin buzzwords). 4) Mostrar los PNGs generados en Discord. 5) Preguntar '¿Publico este carrusel en las 3 plataformas?'. NO publicar sin confirmación."
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "crons": [
+    {
+      "name": "daily-ai-scan",
+      "schedule": "0 6 * * *",
+      "prompt": "Scan diario de fuentes AI. Usa Firecrawl y Perplexity para: 1) Changelogs/blogs de Anthropic, OpenAI, Google AI, Mistral, ElevenLabs, Meta. 2) Reddit: r/ClaudeAI, r/artificial, r/LocalLLaMA. 3) Product Hunt y Hacker News trending. Genera newsletter: emoji por categoría + título + 2 líneas contexto + link fuente. Guarda en docs/research/YYYY-MM-DD-scan.md. Publica en Discord."
+    }
+  ]
+}

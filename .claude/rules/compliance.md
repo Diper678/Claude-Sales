@@ -7,7 +7,7 @@ paths:
   - "**/*gdpr*"
 ---
 
-# Reglas de Compliance — Sisteco
+# Reglas de Compliance — [EMPRESA]
 
 ## Ley 21.719 (Chile)
 - SIEMPRE referir como "Ley 21.719" — NO solo "GDPR"
@@ -28,6 +28,7 @@ paths:
 - npm audit regular
 - NUNCA almacenar tokens de sesión en localStorage
 - Credenciales SOLO en `.env`, NUNCA en código
+- Plan completo: `docs/research/SECURITY_BY_DESIGN_RESEARCH.md`
 
 ## Métricas y Contenido
 - NUNCA inventar testimonios, métricas o estadísticas

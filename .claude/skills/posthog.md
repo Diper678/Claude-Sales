@@ -1,11 +1,11 @@
 ---
 name: posthog
-description: Gestion completa de PostHog analytics para Sisteco. Tracking de eventos, feature flags, revenue, A/B testing, session replay, compliance Ley 21.719, alertas Discord. Trigger con "posthog", "analytics", "tracking", "feature flag", "metricas", "eventos".
+description: Gestion completa de PostHog analytics para [EMPRESA]. Tracking de eventos, feature flags, revenue, A/B testing, session replay, compliance Ley 21.719, alertas Discord. Trigger con "posthog", "analytics", "tracking", "feature flag", "metricas", "eventos".
 ---
 
 # Skill: PostHog — Analytics & Product Intelligence
 
-Referencia unica para todas las operaciones PostHog en Sisteco.
+Referencia unica para todas las operaciones PostHog en [EMPRESA].
 Hosting EU obligatorio (Frankfurt) por Ley 21.719.
 
 ---
@@ -132,7 +132,7 @@ process.on('beforeExit', shutdown);
 
 ## 3. Feature Flags
 
-### Flags de plan Sisteco
+### Flags de plan [EMPRESA]
 
 Estos flags controlan features por plan de suscripcion:
 

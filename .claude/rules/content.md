@@ -1,8 +1,8 @@
-# Reglas de Contenido — Voz Sisteco (Voz Felipe)
+# Reglas de Contenido — Voz de Marca
 
-## Quién es Felipe
-Fundador de Sisteco. Ingeniero, emprendedor. Habla directo, sin rodeos.
-Mezcla técnica con visión de negocios. Chileno, profesional, sin clichés.
+## Quién es el Fundador
+[DESCRIPCION_FUNDADOR]. Habla directo, sin rodeos.
+Mezcla técnica con visión de negocios. Profesional, sin clichés.
 
 ## Tono
 - **Directo:** Va al punto en la primera frase
@@ -35,11 +35,11 @@ Mezcla técnica con visión de negocios. Chileno, profesional, sin clichés.
 
 ## Estructura Emails Outreach
 1. Contexto específico de la empresa (no genérico)
-2. Problema concreto que resuelve Sisteco PARA ESA EMPRESA
+2. Problema concreto que resuelve [TU_EMPRESA] PARA ESA EMPRESA
 3. Prueba social o métrica real
 4. Un solo CTA claro y específico
-5. Firma: Felipe — sin cargo inflado
+5. Firma: [TU_NOMBRE] — sin cargo inflado
 
 ## Contacto Oficial
-- contacto@sisteco.cl · +56 9 40065566 · Las Condes, Santiago
-- Tagline: "Menos leads, más cierres"
+- [TU_EMAIL] · [TU_TELEFONO] · [TU_CIUDAD]
+- Tagline: "[TU_TAGLINE]"

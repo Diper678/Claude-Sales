@@ -6,7 +6,7 @@ paths:
   - "public/**"
 ---
 
-# Reglas Frontend — Sisteco
+# Reglas Frontend
 
 ## Identidad Visual (nunca cambiar sin razón)
 
@@ -19,7 +19,7 @@ paths:
 | Borde | #e5e5e5 |
 | Font heading | Sharp Grotesk |
 | Font body | Source Sans 3 |
-| Font logo | Nasalization (SOLO para wordmark "Sisteco") |
+| Font logo | [TU_FONT_LOGO] |
 | Iconos | Lucide 0.468.0 |
 
 ## Librerías

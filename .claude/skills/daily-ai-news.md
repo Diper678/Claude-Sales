@@ -6,7 +6,7 @@ description: Search and summarize the top AI developments from the last 24 hours
 # Daily AI News Briefing — B2B Sales & Major AI
 
 ## Purpose
-Deliver a prioritized daily briefing of the 5 most important AI developments, optimized for a B2B sales automation company (Sisteco).
+Deliver a prioritized daily briefing of the 5 most important AI developments, optimized for a B2B sales automation company ([EMPRESA]).
 
 ## Execution Protocol
 
@@ -44,7 +44,7 @@ Prioritize by this hierarchy:
 ### 1. [Titulo] — [Empresa]
 **Categoria:** [Model Release | Sales Tool | Funding | Platform Update | Breaking]
 **Resumen:** [2-3 oraciones concisas]
-**Impacto Sisteco:** [1 oracion: como afecta o se puede aprovechar para Sisteco/SAAN]
+**Impacto [EMPRESA]:** [1 oracion: como afecta o se puede aprovechar para [EMPRESA]/SAAN]
 **Fuente:** [link markdown]
 
 ### 2. [Titulo] — [Empresa]

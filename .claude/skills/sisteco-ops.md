@@ -1,7 +1,7 @@
 ---
 name: sisteco-ops
 description: >
-  Operaciones y onboarding de Sisteco: checklist completo de onboarding nuevo cliente
+  Operaciones y onboarding de [EMPRESA]: checklist completo de onboarding nuevo cliente
   (<48h), protocolo de incidentes por tiers, weekly CEO report, guía constitución SpA,
   variables de entorno, configuración de tenant multi-cliente. Reemplaza al Ops Manager.
 triggers:
@@ -28,7 +28,7 @@ triggers:
   - multi-tenant
 ---
 
-# Sisteco Operations — Referencia Completa
+# [EMPRESA] Operations — Referencia Completa
 
 > Reemplaza al Ops Manager. Cubre: onboarding clientes, incidentes, reportes, constitución SpA.
 > Objetivo: cualquier operación ejecutable en < 48h sin contratar personal.
@@ -43,7 +43,7 @@ triggers:
 □ Verificar pago recibido en Reveniu dashboard
 □ Crear organización en Clerk:
     → Clerk Dashboard > Organizations > Create
-    → Nombre: "[EMPRESA] - Sisteco"
+    → Nombre: "[EMPRESA] - [EMPRESA]"
     → Invitar email del cliente
 □ Configurar tenant en Convex:
     → Agregar org en tabla `organizations` con metadata del cliente
@@ -52,7 +52,7 @@ triggers:
     → Copiar configuración ICP default
     → Ajustar keywords a su industria/cargo target
 □ Configurar Discord webhook del cliente (si Plan Crecimiento/Enterprise):
-    → Cliente crea canal #sisteco-leads en su Discord
+    → Cliente crea canal #empresa-leads en su Discord
     → Comparte webhook URL
     → Actualizar en Convex: organizations.discordWebhook
 □ Enviar email de bienvenida (template Sección 4)
@@ -67,7 +67,7 @@ triggers:
 □ Verificar que leads aparecen en Convex (tabla leads)
 □ Confirmar que enriquecimiento está corriendo
 □ Mostrar primeros leads en dashboard durante llamada
-□ Compartir link al dashboard: app.sisteco.cl/[slug-cliente]
+□ Compartir link al dashboard: [TU_APP_URL]/[slug-cliente]
 ```
 
 ### Día 2 — Sesión de Configuración (60 min)
@@ -119,16 +119,16 @@ triggers:
 
 ## 2. Variables de Entorno — Lista Completa
 
-### n8n (sistecotest.app.n8n.cloud > Settings > Variables)
+### n8n (tu-instancia.app.n8n.cloud > Settings > Variables)
 
 | Variable | Valor | Estado |
 |----------|-------|--------|
-| `SAAN_CONVEX_SITE_URL` | `https://animated-pika-122.convex.cloud` | ✅ Configurada |
-| `SAAN_API_SECRET` | `<desde Convex Dashboard>` | ⚠️ Verificar |
-| `PHANTOMBUSTER_API_KEY` | `4g2SqzX1xS45348lUTaaRYhF87uLc8o64HObs4QhJRA` | ✅ Configurada |
-| `PB_LINKEDIN_AGENT_ID` | `510547627503326` | ✅ Configurada |
+| `SAAN_CONVEX_SITE_URL` | `<desde Convex Dashboard>` | ⚠️ Configurar |
+| `SAAN_API_SECRET` | `<desde Convex Dashboard>` | ⚠️ Configurar |
+| `PHANTOMBUSTER_API_KEY` | `<desde PhantomBuster Dashboard>` | ⚠️ Configurar |
+| `PB_LINKEDIN_AGENT_ID` | `<ID del phantom>` | ⚠️ Configurar |
 | `PB_LINKEDIN_SEARCH_URL` | `<URL búsqueda LinkedIn>` | ⚠️ Opcional |
-| `FIRECRAWL_API_KEY` | `fc-d37d27c98bfa47f7bb37911bb223b684` | ✅ Configurada |
+| `FIRECRAWL_API_KEY` | `<desde firecrawl.dev>` | ⚠️ Configurar |
 | `SIMPLE_API_KEY` | `<desde SimpleAPI.cl>` | ❌ Pendiente |
 | `DISCORD_WEBHOOK_URL` | `<webhook CEO>` | ❌ Pendiente |
 | `GEMINI_API_KEY` | `<desde Google AI Studio>` | ❌ Pendiente |
@@ -147,7 +147,7 @@ triggers:
 | `REVENIU_LINK_BASE_MONTHLY` | Link pago Plan Inicio | ❌ Pendiente |
 | `REVENIU_LINK_GROWTH_MONTHLY` | Link pago Plan Crecimiento | ❌ Pendiente |
 
-### Convex Dashboard (animated-pika-122.convex.cloud > Settings > Environment Variables)
+### Convex Dashboard ([TU_CONVEX_URL] > Settings > Environment Variables)
 
 | Variable | Descripción | Estado |
 |----------|-------------|--------|
@@ -177,7 +177,7 @@ triggers:
 1. Probar webhook manualmente:
    ```bash
    curl -X POST "${DISCORD_WEBHOOK_URL}" -H "Content-Type: application/json" \
-   -d '{"content": "Test de alerta Sisteco"}'
+   -d '{"content": "Test de alerta [EMPRESA]"}'
    ```
 2. Si falla 404: webhook fue eliminado → crear nuevo webhook en Discord
 3. Actualizar variable `DISCORD_WEBHOOK_URL` en n8n
@@ -214,9 +214,9 @@ triggers:
 1. Notificar al cliente en < 2 horas:
    ```
    Hola [NOMBRE], estamos al tanto de un problema técnico que afecta
-   tu pipeline en Sisteco. Estamos trabajando en la solución y
+   tu pipeline en [EMPRESA]. Estamos trabajando en la solución y
    te damos un ETA actualizado en [1-2 HORAS]. Disculpa las molestias.
-   Felipe, Sisteco
+   [TU_NOMBRE], [TU_EMPRESA]
    ```
 2. Documentar incidente en Convex: tabla `incidents`
 3. Si no se resuelve en 4h: activar modo manual (exportar leads de PhantomBuster
@@ -229,12 +229,12 @@ triggers:
 
 ### Email Bienvenida (Hora 0)
 
-**Asunto:** Bienvenido a Sisteco — tu pipeline B2B está listo
+**Asunto:** Bienvenido a [EMPRESA] — tu pipeline B2B está listo
 
 ```
 Hola [NOMBRE],
 
-¡Bienvenido a Sisteco! Tu cuenta ya está activa.
+¡Bienvenido a [EMPRESA]! Tu cuenta ya está activa.
 
 En las próximas 48 horas vamos a:
 ✅ Configurar tu ICP (Perfil de Cliente Ideal)
@@ -248,21 +248,21 @@ También te invito a agendar la sesión de onboarding (60 min):
 [CALENDLY_LINK]
 
 Cualquier pregunta, estoy disponible directo:
-WhatsApp: +56 9 40065566
-Email: contacto@sisteco.cl
+WhatsApp: [TU_TELEFONO]
+Email: [TU_EMAIL]
 
-Felipe
-CEO, Sisteco
+[TU_NOMBRE]
+[TU_CARGO], [TU_EMPRESA]
 ```
 
 ### Email Primera Semana Review
 
-**Asunto:** Tu primera semana en Sisteco — resultados y próximos pasos
+**Asunto:** Tu primera semana en [EMPRESA] — resultados y próximos pasos
 
 ```
 Hola [NOMBRE],
 
-Esta fue tu primera semana con Sisteco:
+Esta fue tu primera semana con [EMPRESA]:
 
 📊 RESUMEN SEMANA 1
 • Leads descubiertos: [N]
@@ -280,7 +280,7 @@ ajusto el scoring esta semana.
 
 Hablamos el [DÍA] a las [HORA] para el check-in.
 
-Felipe
+[TU_NOMBRE]
 ```
 
 ---
@@ -299,7 +299,7 @@ Cron trigger (viernes 17:00 Chile)
   → Calcular: variación semana vs semana anterior (JS Code node)
   → Calcular: mejor industria de la semana
   → Formatear reporte ejecutivo (Markdown)
-  → POST Discord webhook CEO #sisteco-ops
+  → POST Discord webhook CEO #empresa-ops
   → POST Resend: email CEO con reporte
 ```
 
@@ -325,7 +325,7 @@ Cron trigger (viernes 17:00 Chile)
 [TEXTO GENERADO POR IA BASADO EN LOS DATOS]
 
 ---
-Próximo reporte: [FECHA + 7 DÍAS] | Generado automáticamente por Sisteco
+Próximo reporte: [FECHA + 7 DÍAS] | Generado automáticamente por [EMPRESA]
 ```
 
 ---
@@ -341,7 +341,7 @@ Webhook trigger (Reveniu payment confirmed)
   → POST Convex: organizations:createOrg
       → campos: nombre, plan, email, fechaInicio, estado: "onboarding"
   → POST Convex: icpProfiles:createDefaultIcp
-      → crear ICP con configuración default de Sisteco
+      → crear ICP con configuración default de [EMPRESA]
   → POST Resend: enviar email de bienvenida (template Sección 4)
   → POST Discord CEO webhook: nuevo cliente
       → "🎉 NUEVO CLIENTE: [EMPRESA] — Plan [PLAN] — $[PRECIO]/mes"
@@ -354,7 +354,7 @@ Webhook trigger (Reveniu payment confirmed)
 ## 7. Schema Convex Multi-tenant
 
 ```typescript
-// Tabla: organizations (cada cliente de Sisteco)
+// Tabla: organizations (cada cliente de [EMPRESA])
 {
   nombre: string,
   plan: "inicio" | "crecimiento" | "enterprise",
@@ -413,7 +413,7 @@ Webhook trigger (Reveniu payment confirmed)
 
 ```
 ANTES DE EMPEZAR:
-□ Nombre empresa elegido: "SISTECO SpA" (verificar disponibilidad en REyS)
+□ Nombre empresa elegido: "[EMPRESA] SpA" (verificar disponibilidad en REyS)
 □ Capital inicial: mínimo $1.000.000 CLP (puede ser en trabajo/servicios)
 □ ClaveÚnica activa (para firma digital en línea)
 □ Cuenta corriente personal para recibir capital
@@ -422,12 +422,12 @@ PASO 1 — REGISTRO (gratis, online):
 □ Ir a www.registrodeempresasysociedades.cl
 □ Click "Crear empresa" > "SpA" (Sociedad por Acciones)
 □ Completar formulario:
-    - Nombre: SISTECO SpA
+    - Nombre: [EMPRESA] SpA
     - Objeto social: "Desarrollo y comercialización de software, plataformas
       digitales y servicios de automatización empresarial. También podrá
       realizar cualquier otra actividad lícita."
     - Capital: $1.000.000 CLP
-    - Socios: Felipe [Apellido], RUT XX.XXX.XXX-X (100% acciones)
+    - Socios: [TU_NOMBRE] [Apellido], RUT XX.XXX.XXX-X (100% acciones)
     - Domicilio social: Las Condes, Santiago
 □ Firma digital con ClaveÚnica
 □ Guardar escritura en PDF
@@ -472,7 +472,7 @@ PASO 5 — LibreDTE (facturación gratis hasta 500 DTE/mes):
 | MRR | Suma de suscripciones activas en USD/mes | Convex: organizations.plan | Diario |
 | Leads nuevos | Leads creados en últimos 7 días | Convex: leads (status=new) | Diario |
 | HOT leads | Leads con scoreCategory=HOT | Convex: leads | Tiempo real |
-| Pipeline value | HOT leads × ticket promedio | Calculado: HOT × $400 | Semanal |
+| Pipeline value | HOT leads × ticket promedio | Calculado: HOT × $[TICKET_PROMEDIO] | Semanal |
 | Conversion rate | Leads contactados que respondieron / total contactados | Convex: leads (status) | Semanal |
 | Churn rate | Suscripciones canceladas / total activas × 100 | Convex: organizations | Mensual |
 | CAC | Costo total adquisición / nuevos clientes | Manual (costos Reveniu + tiempo) | Mensual |
@@ -493,12 +493,12 @@ PASO 5 — LibreDTE (facturación gratis hasta 500 DTE/mes):
 □ Registrar motivo de churn para aprendizaje
 
 Email de offboarding:
-Asunto: Tu exportación de datos de Sisteco — [EMPRESA]
+Asunto: Tu exportación de datos de [EMPRESA] — [EMPRESA]
 
 "Hola [NOMBRE], adjunto la exportación completa de tus datos en
-Sisteco (leads, scores, actividad). Tus datos serán eliminados
+[EMPRESA] (leads, scores, actividad). Tus datos serán eliminados
 de nuestros sistemas el [FECHA + 30 DÍAS]. Gracias por confiar
-en Sisteco. Felipe"
+en [EMPRESA]. [TU_NOMBRE]"
 ```
 
 ---
