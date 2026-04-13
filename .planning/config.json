@@ -1,0 +1,9 @@
+{
+  "mode": "gsd",
+  "granularity": "medium",
+  "workflow": {
+    "auto_archive": true,
+    "require_retrospective": false,
+    "max_tasks_per_plan": 8
+  }
+}
