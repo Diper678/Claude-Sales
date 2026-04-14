@@ -1,8 +1,11 @@
-# CLAUDE.md — [EMPRESA] Content Engine
+# CLAUDE.md — [EMPRESA] Sales & Content Engine
 
 ## Proyecto
-[EMPRESA] Content Engine: generación y automatización de contenido para [EMPRESA].
-Carruseles (Canva), videos (Remotion), posts, respuestas multicanal.
+Framework de ventas B2B + Content Engine para [EMPRESA].
+Dos motores integrados:
+- **Ventas:** prospección LinkedIn → enrichment → scoring → outreach personalizado
+- **Contenido:** carruseles (Canva), videos (Remotion), posts, respuestas multicanal
+
 Data de Reddit, YouTube, Claude Code, Google Labs, competencia.
 Publicación calendarizada con n8n workflows coordinados.
 Contacto: [TU_EMAIL] · [TU_TELEFONO] · [TU_CIUDAD]
@@ -50,6 +53,15 @@ Multicanal RRSS + email, AutoResearch para respuestas informadas
 
 ## Skills — Lenguaje Natural → CLI
 
+### Ventas B2B
+| Tú dices... | Skill | Qué hace |
+|-------------|-------|----------|
+| "prospectar" / "pipeline" | prospect | Lanza scrape LinkedIn + estado pipeline |
+| "estado leads" / "dashboard" | lead-status | Dashboard leads + ejecuciones n8n |
+| "enriquecer emails" | enrich-leads | Pipeline multi-capa de enrichment |
+| "enviar outreach" / "generar mensajes" | send-outreach | Mensajes personalizados por tier |
+
+### Contenido
 | Tú dices... | Skill | Qué hace |
 |-------------|-------|----------|
 | "investigar" / "research" | content-research | Absorbe data de fuentes |
@@ -58,7 +70,7 @@ Multicanal RRSS + email, AutoResearch para respuestas informadas
 | "crear video" / "remotion" | create-video | Genera video Remotion |
 | "publicar" / "agendar" | publish-content | Agenda/publica contenido |
 | "responder" / "community" | community-respond | Responde RRSS/email |
-| "estado" / "status" | content-status | Dashboard contenido |
+| "estado contenido" | content-status | Dashboard contenido |
 | "tendencias" / "trends" | trend-scan | Escanea tendencias |
 
 CLI: `node scripts/content-cli.js <modulo> <accion> [flags]`

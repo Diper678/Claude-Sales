@@ -95,7 +95,7 @@ Santiago de Chile, [FECHA]
 
 ENTRE:
 PRESTADOR: [SISTECO SpA / [NOMBRE REPRESENTANTE], RUT XX.XXX.XXX-X]
-  Domicilio: Las Condes, Santiago de Chile
+  Domicilio: [TU_DIRECCION]
   Email: [TU_EMAIL]
   Teléfono: [TU_TELEFONO]
 
@@ -378,7 +378,7 @@ Firmado: [NOMBRE REPRESENTANTE], Responsable del Tratamiento — [FECHA]
 **Última actualización:** [FECHA]
 **Responsable del tratamiento:** [EMPRESA] SpA, RUT XX.XXX.XXX-X
 **Contacto DPO/privacidad:** [TU_EMAIL]
-**Dirección:** Las Condes, Santiago de Chile
+**Dirección:** [TU_DIRECCION]
 
 ## ¿Qué datos recopilamos?
 
@@ -673,7 +673,7 @@ ENTRE:
 PARTE A: [EMPRESA] SpA
   RUT: XX.XXX.XXX-X
   Representante Legal: [NOMBRE REPRESENTANTE]
-  Domicilio: Las Condes, Santiago de Chile
+  Domicilio: [TU_DIRECCION]
   Email: [TU_EMAIL]
   Teléfono: [TU_TELEFONO]
 

@@ -35,10 +35,9 @@ triggers:
 ```
 Package:     notebooklm-py v0.3.4 (pip, global Python 3.14)
 Auth:        ~/.notebooklm/storage_state.json (cookies Google, ~400 dias)
-CLI:         C:\Users\Dell 5520\AppData\Roaming\Python\Python314\Scripts\notebooklm.exe
+CLI:         [RUTA_CLI_NOTEBOOKLM]
 Bridge:      scripts/notebooklm-bridge.py (Obsidian [EMPRESA] <-> NotebookLM)
-Vault orig:  C:\Users\Dell 5520\Documents\Obsidian\Ing Civil Bioquimica (proyecto original)
-Vault [EMPRESA]: C:\Users\Dell 5520\Documents\Obsidian de [EMPRESA]\[EMPRESA]\
+Vault [EMPRESA]: [RUTA_VAULT_OBSIDIAN]
 ```
 
 ## 2. Arquitectura

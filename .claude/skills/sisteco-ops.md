@@ -428,7 +428,7 @@ PASO 1 — REGISTRO (gratis, online):
       realizar cualquier otra actividad lícita."
     - Capital: $1.000.000 CLP
     - Socios: [TU_NOMBRE] [Apellido], RUT XX.XXX.XXX-X (100% acciones)
-    - Domicilio social: Las Condes, Santiago
+    - Domicilio social: [TU_DIRECCION]
 □ Firma digital con ClaveÚnica
 □ Guardar escritura en PDF
 
